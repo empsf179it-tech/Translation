@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Process | LingoSphere</title>
+  <meta name="description" content="Discover how LingoSphere combines AI translation technology with expert human linguists for perfect localization workflows.">
+  <meta name="theme-color" content="#040B16">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <div class="custom-cursor"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container-custom navbar">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        LingoSphere
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Industries</a>
+        <a href="process.html" class="active">Process</a>
+        <div class="nav-cta-mobile" style="display:none;">
+            <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta" style="display: flex; align-items: center;">
+        <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1 - Process Hero -->
+    <section class="hero-section container-custom">
+      <div class="hero-content reveal">
+        <h1 style="margin-bottom: 24px;">A Smarter Way <br>to <span class="text-gradient">Translate.</span></h1>
+        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 40px; max-width: 540px;">Our proprietary workflow integrates agile translation memory, automated quality checks, and top-tier linguists to deliver enterprise localization at scale.</p>
+      </div>
+      <div class="hero-visual reveal-right" style="transition-delay: 0.2s; top: 15%; right: 5%; transform: none; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: auto;">
+        <!-- Image above animation -->
+        <div class="hero-image-wrapper" style="width: 90%; max-width: 480px; border-radius: 20px; border: 1px solid rgba(0, 229, 255, 0.4); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 229, 255, 0.2); overflow: hidden; background: var(--glass-bg); backdrop-filter: blur(10px); margin-bottom: 30px;">
+          <img src="assets/images/process hero.png" alt="Process" style="width: 100%; height: auto; object-fit: cover; opacity: 0.95; display: block;">
+        </div>
+        
+        <!-- 3D Workflow Abstract -->
+        <div class="workflow-3d" style="height: 350px; width: 100%; flex-shrink: 0;">
+            <div class="w-layer w-bottom"></div>
+            <div class="w-layer w-middle"></div>
+            <div class="w-layer w-top"></div>
+            <div class="w-particle p1"></div>
+            <div class="w-particle p2"></div>
+            <div class="w-particle p3"></div>
+        </div>
+      </div>
+      <style>
+          .workflow-3d { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; perspective: 1200px; transform-style: preserve-3d; }
+          .w-layer { position: absolute; width: 250px; height: 250px; border-radius: 20px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(5px); transform-style: preserve-3d; animation: floatLayer 6s ease-in-out infinite alternate; }
+          .w-bottom { transform: rotateX(60deg) rotateZ(45deg) translateZ(-80px); border-color: rgba(41, 98, 255, 0.4); box-shadow: 0 0 40px rgba(41, 98, 255, 0.2); }
+          .w-middle { transform: rotateX(60deg) rotateZ(45deg) translateZ(0px); border-color: rgba(124, 77, 255, 0.4); box-shadow: 0 0 40px rgba(124, 77, 255, 0.2); animation-delay: 0.5s; }
+          .w-top { transform: rotateX(60deg) rotateZ(45deg) translateZ(80px); border-color: rgba(0, 229, 255, 0.4); box-shadow: 0 0 40px rgba(0, 229, 255, 0.2); animation-delay: 1s; }
+          .w-particle { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0 0 15px #fff; animation: moveParticle 4s linear infinite; }
+          .p1 { animation-delay: 0s; } .p2 { animation-delay: 1.3s; } .p3 { animation-delay: 2.6s; }
+          @keyframes floatLayer { 100% { margin-top: -20px; } }
+          @keyframes moveParticle {
+              0% { transform: translate3d(0, 200px, -100px); opacity: 0; }
+              20% { opacity: 1; }
+              80% { opacity: 1; }
+              100% { transform: translate3d(0, -200px, 150px); opacity: 0; }
+          }
+      </style>
+    </section>
+
+    <!-- Section 2 - Our Process (Horizontal Timeline) -->
+    <section class="container-custom" style="padding-top: 60px;">
+      <div class="section-title reveal">
+        <h2>The Localization Lifecycle</h2>
+        <p>A transparent six-step methodology ensuring consistency and speed.</p>
+      </div>
+
+      <div class="process-horizontal reveal glass-panel">
+        <div class="ph-step">
+          <div class="ph-num">01</div>
+          <h4>Project Analysis</h4>
+          <p>We review file formats, extract text, and establish word counts against translation memory to maximize cost efficiency.</p>
+        </div>
+        <div class="ph-step">
+          <div class="ph-num">02</div>
+          <h4>Linguist Assignment</h4>
+          <p>The project is matched with a dedicated native translator possessing specific expertise in the subject matter.</p>
+        </div>
+        <div class="ph-step">
+          <div class="ph-num">03</div>
+          <h4>Translation</h4>
+          <p>The core translation process begins, utilizing approved client glossaries and style guides for absolute consistency.</p>
+        </div>
+        <div class="ph-step">
+          <div class="ph-num">04</div>
+          <h4>Editing & Review</h4>
+          <p>A second, independent linguist reviews the translation line-by-line against the source text to ensure complete accuracy.</p>
+        </div>
+        <div class="ph-step">
+          <div class="ph-num">05</div>
+          <h4>Quality Assurance</h4>
+          <p>Automated tools verify formatting, identify missing tags, and ensure numerical and terminological exactness.</p>
+        </div>
+        <div class="ph-step">
+          <div class="ph-num">06</div>
+          <h4>Final Delivery</h4>
+          <p>Files are reconstructed in their original format, finalized by the project manager, and delivered securely to you.</p>
+        </div>
+      </div>
+      <style>
+          .process-horizontal { display: flex; flex-direction: column; padding: 40px; border-radius: 16px; position: relative; gap: 40px; }
+          .ph-step { position: relative; z-index: 2; padding-left: 20px; border-left: 2px solid rgba(255,255,255,0.1); }
+          .ph-num { font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: rgba(255,255,255,0.05); -webkit-text-stroke: 1px var(--accent-cyan); line-height: 1; margin-bottom: 16px; }
+          .ph-step h4 { margin-bottom: 12px; font-size: 1.2rem; }
+          .ph-step p { color: var(--text-muted); font-size: 0.95rem; }
+          
+          @media (min-width: 1024px) {
+              .process-horizontal { flex-direction: row; flex-wrap: wrap; gap: 0; padding: 60px; }
+              .ph-step { width: 33.333%; padding: 0 30px; border-left: none; margin-bottom: 60px; }
+              .process-horizontal::after { content: ''; position: absolute; top: 120px; left: 60px; right: 60px; height: 2px; background: rgba(255,255,255,0.05); z-index: 1; }
+          }
+      </style>
+    </section>
+
+    <!-- Section 3 - Technology + Human Expertise Split -->
+    <section class="container-custom">
+      <div class="grid-2" style="align-items: center; gap: 60px;">
+        <!-- Left: Technology -->
+        <div class="reveal-left glass-panel" style="padding: 60px; height: 100%; position: relative; overflow: hidden; border-color: rgba(124, 77, 255, 0.4);">
+          <!-- Tech Background Abstract -->
+          <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; border: 2px dashed rgba(124, 77, 255, 0.2); border-radius: 50%; animation: spinOrbit 20s linear infinite;"></div>
+          <div style="position: absolute; bottom: -50px; left: -50px; width: 150px; height: 150px; border: 1px solid rgba(0, 229, 255, 0.2); border-radius: 50%; animation: spinOrbit 15s linear infinite reverse;"></div>
+          
+          <div style="position: relative; z-index: 2; text-align: center;">
+            <h3 style="font-size: 2rem; margin-bottom: 24px;">Technology Accelerates.</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px;">We deploy enterprise translation memory (TM), glossary management, and AI-assisted workflows to pre-translate repetitive content.</p>
+            <ul style="color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 12px; list-style: none; width: fit-content; margin: 0 auto; text-align: left;">
+              <li style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--accent-violet); border-radius: 50%;"></div> Ensures terminological consistency</li>
+              <li style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--accent-violet); border-radius: 50%;"></div> Reduces costs by recycling text</li>
+              <li style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--accent-violet); border-radius: 50%;"></div> Speeds up delivery times</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Right: Human Expertise -->
+        <div class="reveal-right glass-panel" style="padding: 60px; height: 100%; position: relative; overflow: hidden; border-color: rgba(0, 229, 255, 0.4);">
+          <!-- Human Background Abstract -->
+          <div style="position: absolute; top: -100px; right: -50%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(0, 229, 255, 0.05), transparent 70%); border-radius: 50%;"></div>
+          
+          <div style="position: relative; z-index: 2; text-align: center;">
+            <h3 style="font-size: 2rem; margin-bottom: 24px;">Humans Perfect.</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px;">Algorithms don't understand nuance, humor, or deep cultural context. That's why every project requires expert human curation.</p>
+            <ul style="color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 12px; list-style: none; width: fit-content; margin: 0 auto; text-align: left;">
+              <li style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--accent-cyan); border-radius: 50%;"></div> Adapts tone for the local market</li>
+              <li style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--accent-cyan); border-radius: 50%;"></div> Captures cultural nuances correctly</li>
+              <li style="display: flex; align-items: center; gap: 12px;"><div style="width: 6px; height: 6px; background: var(--accent-cyan); border-radius: 50%;"></div> Maintains emotional resonance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 - Process CTA -->
+    <section class="container-custom" style="padding-bottom: 120px;">
+      <div class="glass-panel reveal" style="padding: 80px 40px; text-align: center; border-radius: 20px; overflow: hidden; position: relative;">
+        <!-- Abstract gradient bg -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(4, 11, 22, 0.9), rgba(41, 98, 255, 0.1)); z-index: 0;"></div>
+        
+        <div style="position: relative; z-index: 1;">
+          <h2 style="font-size: clamp(2.2rem, 4vw, 3.5rem); margin-bottom: 24px;">Let's Translate Your <br><span class="text-gradient">Next Project.</span></h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin: 0 auto 40px; max-width: 600px;">Experience the perfect balance of technology-driven speed and human-crafted quality.</p>
+          <a href="contact.html" class="btn-primary" style="padding: 16px 48px; font-size: 1.1rem;">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 20px;">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            LingoSphere
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Your Global Voice, Precisely Translated. Empowering international business through advanced language technology and human expertise.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Translation</a></li>
+            <li><a href="services.html">Localization</a></li>
+            <li><a href="services.html">Interpretation</a></li>
+            <li><a href="services.html">Certified Translation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Subscribe</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Get industry insights and language technology updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LingoSphere. All rights reserved.</p>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">Privacy Policy</a>
+          <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

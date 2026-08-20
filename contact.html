@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | LingoSphere</title>
+  <meta name="description" content="Get a free translation quote. Tell us what you need translated and our language specialists will review your requirements.">
+  <meta name="theme-color" content="#040B16">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <div class="custom-cursor"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container-custom navbar">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        LingoSphere
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Industries</a>
+        <a href="process.html">Process</a>
+        <div class="nav-cta-mobile" style="display:none;">
+            <a href="#quote-form" class="btn-primary">Get a Free Quote</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta" style="display: flex; align-items: center;">
+        <a href="#quote-form" class="btn-primary">Get a Free Quote</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1 - Contact Hero -->
+    <section class="hero-section container-custom" style="min-height: 60vh; padding-top: 150px; align-items: flex-start;">
+      <div class="hero-content reveal" style="max-width: 800px; text-align: center; margin: 0 auto; z-index: 5;">
+        <h1 style="margin-bottom: 24px;">Tell Us What You Need <br><span class="text-gradient">Translated.</span></h1>
+        <p style="font-size: 1.1rem; color: var(--text-muted); margin: 0 auto 40px; max-width: 600px;">Our language specialists will review your requirements and help you choose the right solution for your specific industry.</p>
+      </div>
+      
+
+    </section>
+
+    <!-- Section 2 - Quote Form & Contact Info -->
+    <section id="quote-form" class="container-custom" style="padding-top: 0;">
+      <div class="grid-2" style="gap: 60px; align-items: flex-start;">
+        
+        <!-- Left: Form -->
+        <div class="glass-panel reveal-left" style="padding: 40px; border-color: var(--accent-cyan); position: relative;">
+          <!-- Decorative glow -->
+          <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, var(--accent-cyan), transparent 70%); opacity: 0.2; border-radius: 50%; pointer-events: none;"></div>
+          
+          <h3 style="margin-bottom: 32px; font-size: 1.5rem;">Request a Free Quote</h3>
+          
+          <form id="quoteForm">
+            <div id="formSuccessMessage" class="form-success-message">
+              Thank you. Your translation request has been received. Our language specialist will contact you shortly.
+            </div>
+            
+            <div class="grid-2" style="gap: 16px; margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" required placeholder="John Doe">
+                <div class="form-error">Name is required.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Business Email *</label>
+                <input type="email" class="form-control" required placeholder="john@company.com">
+                <div class="form-error">Valid business email required.</div>
+              </div>
+            </div>
+            
+            <div class="grid-2" style="gap: 16px; margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label">Company</label>
+                <input type="text" class="form-control" placeholder="Company Name">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid var(--glass-border); margin: 24px 0;">
+
+            <div class="grid-2" style="gap: 16px; margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label">Source Language *</label>
+                <input type="text" class="form-control" required placeholder="e.g. English">
+                <div class="form-error">Required.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Target Language(s) *</label>
+                <input type="text" class="form-control" required placeholder="e.g. Spanish, French">
+                <div class="form-error">Required.</div>
+              </div>
+            </div>
+
+            <div class="grid-2" style="gap: 16px; margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label">Service Required *</label>
+                <select class="form-control" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="document">Document Translation</option>
+                  <option value="website">Website Localization</option>
+                  <option value="legal">Legal Translation</option>
+                  <option value="medical">Medical Translation</option>
+                  <option value="interpretation">Interpretation</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="form-error">Please select a service.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Estimated Word Count</label>
+                <input type="text" class="form-control" placeholder="e.g. 5,000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Desired Deadline</label>
+              <input type="date" class="form-control" style="color-scheme: dark;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 24px;">
+              <label class="form-label">Project Details *</label>
+              <textarea class="form-control" rows="4" required placeholder="Briefly describe your project requirements, target audience, and any specific terminology needs..."></textarea>
+              <div class="form-error">Please provide some details.</div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 32px;">
+                <label class="form-label">Upload File (Optional)</label>
+                <div style="position: relative; border: 1px dashed var(--glass-highlight); padding: 20px; border-radius: 8px; text-align: center; background: rgba(255,255,255,0.02); transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent-cyan)'" onmouseout="this.style.borderColor='var(--glass-highlight)'">
+                    <input type="file" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); margin-bottom: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Drag and drop or click to browse</p>
+                    <p style="color: rgba(255,255,255,0.3); font-size: 0.8rem; margin-top: 4px;">Max file size: 20MB. Formats: .doc, .pdf, .xls, .zip</p>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 16px;">Request a Free Quote</button>
+            <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 16px;">Your information is secured with industry-standard encryption.</p>
+          </form>
+        </div>
+
+        <!-- Section 3 - Contact Information (Right side) -->
+        <div class="reveal-right">
+          <div style="margin-bottom: 40px;">
+            <h3 style="margin-bottom: 16px; font-size: 1.8rem;">Direct Contact</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem;">Prefer to reach out directly? Our global support team is available 24/7 to assist you.</p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <!-- Panel 1 -->
+            <div class="glass-panel contact-panel" style="padding: 24px; display: flex; gap: 20px; align-items: flex-start; border-color: rgba(124, 77, 255, 0.3);">
+              <div style="width: 48px; height: 48px; background: rgba(124, 77, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-violet); flex-shrink: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 8px;">Email Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 4px;">For general inquiries & quotes:</p>
+                <a href="mailto:hello@lingosphere.com" style="color: var(--text-soft-white); font-weight: 500;">hello@lingosphere.com</a>
+              </div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="glass-panel contact-panel" style="padding: 24px; display: flex; gap: 20px; align-items: flex-start; border-color: rgba(0, 229, 255, 0.3);">
+              <div style="width: 48px; height: 48px; background: rgba(0, 229, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-cyan); flex-shrink: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 8px;">Call Us</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 4px;">Mon-Fri, 9am - 6pm (EST):</p>
+                <a href="tel:+18005550199" style="color: var(--text-soft-white); font-weight: 500;">+1 (800) 555-0199</a>
+              </div>
+            </div>
+
+            <!-- Panel 3 -->
+            <div class="glass-panel contact-panel" style="padding: 24px; display: flex; gap: 20px; align-items: flex-start; border-color: rgba(29, 233, 182, 0.3);">
+              <div style="width: 48px; height: 48px; background: rgba(29, 233, 182, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-turquoise); flex-shrink: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 8px;">Global Headquarters</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+                  100 Innovation Drive<br>
+                  Suite 400<br>
+                  New York, NY 10001<br>
+                  United States
+                </p>
+              </div>
+            </div>
+
+            <!-- Map directly under panels -->
+            <div class="glass-panel" style="padding: 10px; border-radius: 16px; overflow: hidden; border-color: rgba(255, 255, 255, 0.1);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius: 8px; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section - FAQ -->
+    <section class="container-custom" style="padding-bottom: 80px;">
+      <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 40px;">Frequently Asked Questions</h2>
+        <style>
+          .faq-item summary::-webkit-details-marker { display: none; }
+          .faq-item[open] summary svg { transform: rotate(180deg); }
+          .faq-item summary svg { transition: transform 0.3s ease; }
+        </style>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-cyan); text-align: center; flex: 1;">What languages do you translate?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">We cover over 100 languages, including major global languages like Spanish, Mandarin, French, German, Arabic, and Japanese, as well as many specialized regional dialects.</p>
+          </details>
+          
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-violet); text-align: center; flex: 1;">How long does a translation project typically take?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">Turnaround time depends on the project size and complexity. Standard delivery is 2,000 words per day per linguist, but we also offer expedited services for urgent requests.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-turquoise); text-align: center; flex: 1;">Do you offer certified translations?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">Yes, we provide fully certified translations for legal, immigration, and official documents, accepted by government agencies and institutions worldwide.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-cyan); text-align: center; flex: 1;">How do you ensure translation quality?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">We use a rigorous multi-step QA process involving initial translation, secondary review by a native-speaking editor, and final automated terminology checks.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-violet); text-align: center; flex: 1;">What is Translation Memory (TM)?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">TM is a secure database that stores your previously translated segments. This ensures brand consistency across projects and reduces costs for repeated text.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-turquoise); text-align: center; flex: 1;">How do you handle confidential documents?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">Security is paramount. We sign non-disclosure agreements (NDAs) and use enterprise-grade encryption to secure your data throughout the entire lifecycle.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-cyan); text-align: center; flex: 1;">Can you translate my website directly?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">Yes, we offer seamless website localization. We can integrate with your CMS via API or work directly with your exported HTML/XML files.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-violet); text-align: center; flex: 1;">What file formats do you support?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">We support almost all modern file formats, including Microsoft Office (Word, Excel, PPT), PDF, Adobe InDesign, HTML, XML, and JSON.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-turquoise); text-align: center; flex: 1;">How is the cost of a translation calculated?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">Pricing is typically calculated on a per-word basis. The exact rate depends on the language pair, technical complexity, and required turnaround time.</p>
+          </details>
+
+          <details class="glass-panel faq-item" style="padding: 24px; border-radius: 12px; border-color: rgba(255,255,255,0.05);">
+            <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; outline: none;">
+              <span style="width: 24px; flex-shrink: 0;"></span>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0; color: var(--accent-cyan); text-align: center; flex: 1;">Do you use machine translation or human translators?</h4>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-top: 16px; margin-bottom: 0;">We offer pure human translation for marketing and nuanced content, as well as AI-assisted translation with human post-editing for high-volume technical data.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 - Final CTA -->
+    <section class="container-custom" style="padding-bottom: 120px;">
+      <div class="reveal" style="text-align: center; padding: 60px 0;">
+        <h2 style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 24px;">Your Message Deserves to Be <br><span class="text-gradient">Understood Everywhere.</span></h2>
+        <a href="#quote-form" class="btn-primary" style="padding: 16px 48px; font-size: 1.1rem; margin-top: 24px;">Speak With Our Experts</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 20px;">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            LingoSphere
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Your Global Voice, Precisely Translated. Empowering international business through advanced language technology and human expertise.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Translation</a></li>
+            <li><a href="services.html">Localization</a></li>
+            <li><a href="services.html">Interpretation</a></li>
+            <li><a href="services.html">Certified Translation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Subscribe</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Get industry insights and language technology updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LingoSphere. All rights reserved.</p>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">Privacy Policy</a>
+          <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation Services | LingoSphere</title>
+  <meta name="description" content="Explore our comprehensive translation, localization, and interpretation services.">
+  <meta name="theme-color" content="#040B16">
+  
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <div class="custom-cursor"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container-custom navbar">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        LingoSphere
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="industries.html">Industries</a>
+        <a href="process.html">Process</a>
+        <div class="nav-cta-mobile" style="display:none;">
+            <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta" style="display: flex; align-items: center;">
+        <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1 - Services Hero -->
+    <section class="hero-section container-custom">
+      <div class="hero-content reveal">
+        <h1 style="margin-bottom: 24px;">Translation Built Around <br><span class="text-gradient">Your Business.</span></h1>
+        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 40px; max-width: 540px;">From legal contracts to global marketing campaigns, our suite of language services ensures your message is delivered accurately and effectively in every language.</p>
+      </div>
+      <div class="hero-visual reveal-right" style="transition-delay: 0.2s; top: 15%; right: 5%; transform: none; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
+        <div class="hero-image-wrapper" style="position: relative; width: 90%; max-width: 480px; border-radius: 20px; border: 1px solid rgba(0, 229, 255, 0.4); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 229, 255, 0.2); overflow: hidden; background: var(--glass-bg); backdrop-filter: blur(10px); transition: transform 0.5s ease, box-shadow 0.5s ease;">
+          <img src="assets/images/service hero.png" alt="Services LingoSphere" style="width: 100%; height: auto; object-fit: cover; opacity: 0.95; display: block;">
+          <div class="hero-image-sweep" style="position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent); transform: skewX(-25deg); animation: lightSweep 6s infinite; pointer-events: none;"></div>
+        </div>
+        
+        <!-- 3D Cube Animation Below Image -->
+        <div class="cube-container" style="margin-top: 60px; position: relative; width: 100px; height: 100px; perspective: 1000px;">
+            <div class="cube" style="width: 100%; height: 100%; position: absolute; transform-style: preserve-3d; animation: spinCube 12s infinite linear;">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+            </div>
+        </div>
+      </div>
+      <style>
+          @keyframes lightSweep { 0% { left: -100%; } 20%, 100% { left: 200%; } }
+          .hero-image-wrapper:hover {
+              transform: scale(1.03) translateY(-5px);
+              box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 60px rgba(0, 229, 255, 0.4) !important;
+              border-color: rgba(0, 229, 255, 0.8) !important;
+          }
+          
+          .cube-face {
+              position: absolute; width: 100px; height: 100px;
+              background: rgba(0, 229, 255, 0.05);
+              border: 2px solid rgba(0, 229, 255, 0.6);
+              box-shadow: 0 0 15px rgba(0, 229, 255, 0.3) inset, 0 0 10px rgba(0, 229, 255, 0.2);
+              display: flex; align-items: center; justify-content: center;
+          }
+          .cube-face::after {
+              content: ''; width: 40px; height: 4px; background: var(--accent-violet); border-radius: 2px;
+              box-shadow: 0 0 10px var(--accent-violet);
+          }
+          .front  { transform: translateZ(50px); }
+          .back   { transform: rotateY(180deg) translateZ(50px); }
+          .right  { transform: rotateY(90deg) translateZ(50px); }
+          .left   { transform: rotateY(-90deg) translateZ(50px); }
+          .top    { transform: rotateX(90deg) translateZ(50px); }
+          .bottom { transform: rotateX(-90deg) translateZ(50px); }
+          @keyframes spinCube {
+              0% { transform: rotateX(0deg) rotateY(0deg); }
+              100% { transform: rotateX(360deg) rotateY(360deg); }
+          }
+      </style>
+    </section>
+
+    <!-- Section 2 - Service Categories (12 Cards) -->
+    <section class="container-custom" style="padding-top: 40px;">
+      <div class="section-title reveal">
+        <h2>Our Services</h2>
+        <p>A complete ecosystem of language solutions tailored to your unique requirements.</p>
+      </div>
+
+      <div class="grid-4" style="align-items: stretch;">
+        <!-- Generating 12 equal-height cards -->
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Document Translation1.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Document Translation">
+          <h3 class="card-title">Document Translation</h3>
+          <p class="card-desc">High-quality translation for corporate communications, reports, and manuals.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Certified Translation2.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Certified Translation">
+          <h3 class="card-title">Certified Translation</h3>
+          <p class="card-desc">Sworn translations for official documents recognized by global institutions.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Legal Translation3.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Legal Translation">
+          <h3 class="card-title">Legal Translation</h3>
+          <p class="card-desc">Precision translation for contracts, patents, and litigation materials.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Technical Translation.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Technical Translation">
+          <h3 class="card-title">Technical Translation</h3>
+          <p class="card-desc">Accurate translation of technical documentation and engineering specifications.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Medical Translation4.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Medical Translation">
+          <h3 class="card-title">Medical Translation</h3>
+          <p class="card-desc">ISO-compliant translation for clinical trials, IFUs, and medical devices.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Financial Translation.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Financial Translation">
+          <h3 class="card-title">Financial Translation</h3>
+          <p class="card-desc">Secure translation of annual reports, audits, and investor communications.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Website Localization6.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Website Localization">
+          <h3 class="card-title">Website Localization</h3>
+          <p class="card-desc">Comprehensive adaptation of digital platforms for international users.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Software Localization.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Software Localization">
+          <h3 class="card-title">Software Localization</h3>
+          <p class="card-desc">End-to-end UI/UX localization, string translation, and linguistic testing.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Interpretation9.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Interpretation">
+          <h3 class="card-title">Interpretation</h3>
+          <p class="card-desc">Simultaneous and consecutive interpreting via phone, video, or in-person.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Transcreation.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Transcreation">
+          <h3 class="card-title">Transcreation</h3>
+          <p class="card-desc">Creative adaptation of marketing copy to preserve brand emotion and intent.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Subtitling & Voiceover.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Subtitling & Voiceover">
+          <h3 class="card-title">Subtitling & Voiceover</h3>
+          <p class="card-desc">Professional multimedia localization for corporate training and marketing videos.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+        
+        <div class="card-3d reveal"><div class="card-3d-inner"><div class="card-content">
+          <img src="assets/images/Multilingual Content12.png" style="width: calc(100% + 64px); margin: -40px -32px 24px -32px; height: 160px; object-fit: cover; display: block; max-width: none;" alt="Multilingual Content">
+          <h3 class="card-title">Multilingual Content</h3>
+          <p class="card-desc">Original content generation tailored specifically for targeted global audiences.</p>
+          <a href="contact.html" class="card-arrow">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div></div></div>
+      </div>
+    </section>
+
+    <!-- Section 3 - Quality Assurance Pipeline -->
+    <section class="container-custom">
+      <div class="section-title reveal">
+        <h2>Uncompromising Quality Assurance</h2>
+        <p>A rigorous, multi-step pipeline ensuring every word meets enterprise standards.</p>
+      </div>
+
+      <div class="pipeline-container reveal" style="perspective: 1200px;">
+        <div class="pipeline-inner">
+          <div class="pipeline-node">
+            <div class="node-icon">1</div>
+            <h4>Translation</h4>
+          </div>
+          <div class="pipeline-connector"></div>
+          
+          <div class="pipeline-node">
+            <div class="node-icon">2</div>
+            <h4>Editing</h4>
+          </div>
+          <div class="pipeline-connector"></div>
+          
+          <div class="pipeline-node">
+            <div class="node-icon">3</div>
+            <h4>Terminology</h4>
+          </div>
+          <div class="pipeline-connector"></div>
+          
+          <div class="pipeline-node">
+            <div class="node-icon">4</div>
+            <h4>QA Check</h4>
+          </div>
+          <div class="pipeline-connector"></div>
+          
+          <div class="pipeline-node">
+            <div class="node-icon">5</div>
+            <h4>Final Delivery</h4>
+          </div>
+        </div>
+      </div>
+      <style>
+          .pipeline-container { overflow-x: auto; padding: 60px 0; }
+          .pipeline-inner { display: flex; align-items: center; justify-content: space-between; min-width: 800px; padding: 0 40px; transform-style: preserve-3d; }
+          .pipeline-node { display: flex; flex-direction: column; align-items: center; gap: 16px; transform: translateZ(30px); transition: transform 0.3s; }
+          .pipeline-node:hover { transform: translateZ(50px) scale(1.1); }
+          .node-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--glass-bg); border: 2px solid var(--accent-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-family: var(--font-heading); font-weight: bold; color: #fff; box-shadow: 0 0 20px rgba(0,229,255,0.2); backdrop-filter: blur(5px); }
+          .pipeline-connector { flex-grow: 1; height: 2px; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-violet)); margin: 0 16px; position: relative; opacity: 0.5; }
+          .pipeline-connector::after { content: ''; position: absolute; top: -3px; left: 0; width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: moveConnector 2s linear infinite; box-shadow: 0 0 10px #fff; }
+          @keyframes moveConnector { 0% { left: 0; opacity: 0; } 50% { opacity: 1; } 100% { left: 100%; opacity: 0; } }
+      </style>
+    </section>
+
+    <!-- Section 4 - Service CTA -->
+    <section class="container-custom" style="padding-bottom: 120px;">
+      <div class="glass-panel reveal" style="padding: 60px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; border-color: var(--accent-cyan);">
+        <h2 style="margin-bottom: 24px;">Need a Translation Solution Built for Your Industry?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem; max-width: 700px;">Our language architects will design a tailored workflow that meets your specific technical, legal, or marketing requirements.</p>
+        <a href="contact.html" class="btn-primary">Request a Free Quote</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Include identical footer as index -->
+  <footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 20px;">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            LingoSphere
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Your Global Voice, Precisely Translated. Empowering international business through advanced language technology and human expertise.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Translation</a></li>
+            <li><a href="services.html">Localization</a></li>
+            <li><a href="services.html">Interpretation</a></li>
+            <li><a href="services.html">Certified Translation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Subscribe</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Get industry insights and language technology updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LingoSphere. All rights reserved.</p>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">Privacy Policy</a>
+          <a href="#" style="color: var(--text-muted); font-size: 0.9rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
