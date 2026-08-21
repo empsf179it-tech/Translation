@@ -8,6 +8,17 @@
   <meta name="theme-color" content="#040B16">
   
   <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    /* High contrast navbar for subpages */
+    .site-header {
+      background: rgba(4, 11, 22, 0.85) !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
+    }
+  </style>
 </head>
 <body>
   
@@ -46,12 +57,26 @@
 
   <main>
     <!-- Section 1 - Industries Hero -->
+    <style>
+      @media (max-width: 1024px) {
+        .industries-hero-visual {
+          top: 0 !important;
+          right: 0 !important;
+          margin-top: 60px !important;
+        }
+        .hero-section {
+          min-height: auto !important;
+          padding-bottom: 80px !important;
+          overflow: visible !important;
+        }
+      }
+    </style>
     <section class="hero-section container-custom">
       <div class="hero-content reveal">
         <h1 style="margin-bottom: 24px;">Language Expertise Meets <br><span class="text-gradient">Industry Expertise.</span></h1>
         <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 40px; max-width: 540px;">We match your project with linguists who have documented professional experience in your specific sector, ensuring perfect terminological accuracy.</p>
       </div>
-      <div class="hero-visual reveal-right" style="transition-delay: 0.2s; top: 15%; right: 5%; transform: none; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: auto;">
+      <div class="hero-visual reveal-right industries-hero-visual" style="transition-delay: 0.2s; top: 15%; right: 5%; transform: none; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: auto;">
         <!-- Image above animation -->
         <div class="hero-image-wrapper" style="width: 90%; max-width: 480px; border-radius: 20px; border: 1px solid rgba(0, 229, 255, 0.4); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 229, 255, 0.2); overflow: hidden; background: var(--glass-bg); backdrop-filter: blur(10px); margin-bottom: 30px;">
           <img src="assets/images/industrials hero.png" alt="Industries" style="width: 100%; height: auto; object-fit: cover; opacity: 0.95; display: block;">
@@ -174,6 +199,11 @@
         <h2>Tailored Industry Solutions</h2>
         <p>Explore our targeted approaches for distinct global sectors.</p>
       </div>
+      <style>
+        .industry-panel .grid-2 > div {
+          width: 100% !important;
+        }
+      </style>
 
       <div class="industry-selector reveal glass-panel" style="padding: 40px;">
         <div class="industry-nav">
