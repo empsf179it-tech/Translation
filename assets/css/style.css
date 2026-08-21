@@ -1304,3 +1304,29 @@ select.form-control option {
     text-align: center !important;
   }
 }
+
+/* Back to Top */
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.back-to-top:hover {
+  background: var(--accent-cyan);
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.2);
+}
